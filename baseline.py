@@ -59,3 +59,4 @@ print("AUC на валидации:", roc_auc_score(y_valid, y_pred))
 test_pred = model.predict(test[feat_cols], num_iteration=model.best_iteration)
 pd.DataFrame({"id": test["id"], "click": test_pred}).to_csv("submission.csv", index=False)
 print("Файл submission.csv сохранён!")
+#done
